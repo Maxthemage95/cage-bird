@@ -1,7 +1,36 @@
 
+@font-face {
+  font-family: "Alegreya";
+  src: url("../fonts/Alegreya/Alegreya-Regular.ttf"),
+       url("../fonts/Alegreya/Alegreya-Black.ttf"),
+       url("../fonts/Alegreya/Alegreya-BlackItalic.ttf"),
+       url("../fonts/Alegreya/Alegreya-Bold.ttf"),
+       url("../fonts/Alegreya/Alegreya-BoldItalic.ttf"),
+       url("../fonts/Alegreya/Alegreya-Italic.ttf");
+}
+
+@font-face {
+  font-family: "AlegreyaSans";
+  src: url("../fonts/Alegreya_Sans/AlegreyaSans-Regular.ttf"),
+       url("../fonts/Alegreya_Sans/AlegreyaSans-Italic.ttf"),
+       url("../fonts/Alegreya_Sans/AlegreyaSans-Black.ttf"),
+       url("../fonts/Alegreya_Sans/AlegreyaSans-BlackItalic.ttf"),
+       url("../fonts/Alegreya_Sans/AlegreyaSans-Bold.ttf"),
+       url("../fonts/Alegreya_Sans/AlegreyaSans-BoldItalic.ttf"),
+       url("../fonts/Alegreya_Sans/AlegreyaSans-ExtraBold.ttf"),
+       url("../fonts/Alegreya_Sans/AlegreyaSans-ExtraBoldItalic.ttf"),
+       url("../fonts/Alegreya_Sans/AlegreyaSans-Light.ttf"),
+       url("../fonts/Alegreya_Sans/AlegreyaSans-LightItalic.ttf"),
+       url("../fonts/Alegreya_Sans/AlegreyaSans-Medium.ttf"),
+       url("../fonts/Alegreya_Sans/AlegreyaSans-MediumItalic.ttf"),
+       url("../fonts/Alegreya_Sans/AlegreyaSans-Thin.ttf"),
+       url("../fonts/Alegreya_Sans/AlegreyaSans-ThinItalic.ttf"),
+}
+
 body{
   margin:0;
   padding:0;
+  font-family: "AlegreyaSans", sans-serif;
 }
 
 
@@ -20,7 +49,6 @@ header {
 
 
  ul {
-  outline: 1px solid red;
   display: none;
   flex-flow: row nowrap;
   justify-content:space-around;
@@ -31,14 +59,18 @@ header {
 }
 
 ul li {
-  outline: 1px solid black;
   margin: 20px 0;
 }
 
 header a {
   text-decoration: none;
   color: white;
+}
 
+header a:hover {
+  background: white;
+  color: black;
+  border-bottom: 1px solid #903;
 }
 
 #toc {
@@ -49,18 +81,14 @@ header a {
   text-decoration: none;
 }
 
-#toc:hover {
-  background: white;
-  color: black;
-  border-bottom: 1px solid red;
-}
+
 
 #close {
-  color: red;
+  color: #903;
 }
 
 #close:hover {
-  background: red;
+  background: #903;
   color: white;
 }
 
@@ -68,17 +96,65 @@ header a {
 
 main {
   display: flex;
-  flex-flow: column;
+  flex-flow: row wrap;
   align-items: center;
+  justify-content: center;
   background-image: url("../images/birdcage.jpg");
   background-size: cover;
-  height: 500px;
-  justify-content: center;
+  height:100vh;
+
 }
+
+.title-page {
+  font-family: "Alegreya", Georgia, serif;
+  background-color: rgba(255, 255, 255, 0.75);
+  padding: 40px;
+  text-align: center;
+}
+
+.title-page h1 {
+  font-size: 48px;
+  margin-bottom: -25px;
+}
+
+.bottom-pagination {
+  color: black;
+  text-decoration: none;
+  flex: 1 100%;
+}
+
+.bottom-pagination:hover {
+  border-bottom: 1px solid #903;
+  background-color: white;
+}
+
+
+.stanza {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background-color: rgba(255, 255, 255, 0.75);
+  font-family: "Alegreya", Georga, serif;
+}
+
+.stanza p {
+  padding: 30px;
+  line-height: 1.25;
+  font-size: 24px;
+
+}
+
+
+
+
+
+
 
 footer {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   background-color:#524E4B;
+  color: white;
 }
