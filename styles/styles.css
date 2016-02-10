@@ -1,30 +1,18 @@
 
+/* Add special fonts by linking Alegreya-Regular.ttf and Alegreya-Bold.ttf from the
+fonts folder */
 @font-face {
   font-family: "Alegreya";
-  src: url("../fonts/Alegreya/Alegreya-Regular.ttf"),
-       url("../fonts/Alegreya/Alegreya-Black.ttf"),
-       url("../fonts/Alegreya/Alegreya-BlackItalic.ttf"),
-       url("../fonts/Alegreya/Alegreya-Bold.ttf"),
-       url("../fonts/Alegreya/Alegreya-BoldItalic.ttf"),
-       url("../fonts/Alegreya/Alegreya-Italic.ttf");
+  src: url(""),
+       url("");
 }
 
+/* Add a special font by linking AlegreyaSans-Regular.ttf and AlegreyaSans-Bold.ttf
+from the fonts folder*/
 @font-face {
   font-family: "AlegreyaSans";
-  src: url("../fonts/Alegreya_Sans/AlegreyaSans-Regular.ttf"),
-       url("../fonts/Alegreya_Sans/AlegreyaSans-Italic.ttf"),
-       url("../fonts/Alegreya_Sans/AlegreyaSans-Black.ttf"),
-       url("../fonts/Alegreya_Sans/AlegreyaSans-BlackItalic.ttf"),
-       url("../fonts/Alegreya_Sans/AlegreyaSans-Bold.ttf"),
-       url("../fonts/Alegreya_Sans/AlegreyaSans-BoldItalic.ttf"),
-       url("../fonts/Alegreya_Sans/AlegreyaSans-ExtraBold.ttf"),
-       url("../fonts/Alegreya_Sans/AlegreyaSans-ExtraBoldItalic.ttf"),
-       url("../fonts/Alegreya_Sans/AlegreyaSans-Light.ttf"),
-       url("../fonts/Alegreya_Sans/AlegreyaSans-LightItalic.ttf"),
-       url("../fonts/Alegreya_Sans/AlegreyaSans-Medium.ttf"),
-       url("../fonts/Alegreya_Sans/AlegreyaSans-MediumItalic.ttf"),
-       url("../fonts/Alegreya_Sans/AlegreyaSans-Thin.ttf"),
-       url("../fonts/Alegreya_Sans/AlegreyaSans-ThinItalic.ttf"),
+  src: url(""),
+       url("");
 }
 
 body{
